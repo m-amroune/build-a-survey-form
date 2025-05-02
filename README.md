@@ -1,13 +1,13 @@
 ### Project : Build a Survey Form
 
-- Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project.
+- Objective : Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project.
 
-  ### Languages :
+  ## Languages :
 
 - [![Made-with-HTML](https://img.shields.io/badge/Made%20with-HTML-red)](https://developer.mozilla.org/fr/docs/Web/HTML)
 - [![Made-with-CSS](https://img.shields.io/badge/Made%20with-CSS-blue)](https://developer.mozilla.org/fr/docs/Web/CSS)
 
-### User Stories:
+## User Stories:
 
 1) You should have a page title in an h1 element with an id of title
 2) You should have a short explanation in a p element with an id of description
