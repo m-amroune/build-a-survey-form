@@ -1,100 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet"   >
-    <title>Build a Survey Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="styles.css" rel="stylesheet" />
+  <title>Build a Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
-<p id="description"> A survey form for one of  freeCodeCamp's certifications</p>
 
-<form id="survey-form">
-  <label id="name-label">Name </label>
-<input id="name" type="text" placeholder="Enter your name" required /> 
-<label id="email-label"> Email</label>
-<input id="email" type="email" placeholder="Enter your email" required /> 
-<label id="number-label">Age </label>
-<input id="number" type="number" min="1" max="3" placeholder="Age"  />
-<select id="dropdown">
-<option value="">Favorite language ?</option>  
-<option value="1">JavaScript</option>  
-<option value="2">Php</option>
-<option value="3">Java</option>
-<option value="4">Other</option>
-</select>
-<p>Coding for you ? </p>
-<label for="hobby">
-<input name="answer" value="hobby" type="radio"  /> hobby
-</label>
-<label for="work">
-<input name="answer" value="work" type="radio" /> work
-</label>
-<label for="both">
-<input name="answer" value="both" type="radio" /> both
-</label>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">A survey form for Responsive Web Design certification</p>
 
-<label>
-<input type="checkbox" name"improvement" value="Front-end Projects"   />
-Front-end Projects
-</label>
+  <form id="survey-form">
 
-<label>
-<input type="checkbox" name"improvement" value="Back-end Projects"   />
-Back-end Projects
-</label>
+    <!-- Name -->
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required />
 
-<label>
-<input type="checkbox" name"improvement" value="Data Visualization"   />
-Data Visualization
-</label>
-Challenges
-<label>
-<input type="checkbox" name"improvement" value="Challenges"   />
-Challenges
-</label>
+    <!-- Email -->
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" required />
 
-<label>
-<input type="checkbox" name"improvement" value="Open Source Community"  />
-Open Source Community
-</label>
-<label>
+    <!-- Age -->
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="1" max="3" placeholder="Age" />
+
+    <!-- Dropdown -->
+    <label for="dropdown">Favorite language?</label>
+    <select id="dropdown">
+      <option value="">Select a language</option>
+      <option value="1">JavaScript</option>
+      <option value="2">PHP</option>
+      <option value="3">Java</option>
+      <option value="4">Other</option>
+    </select>
+
+    <!-- Radio buttons -->
+    <p>Coding for you?</p>
+    <label>
+      <input name="answer" value="hobby" type="radio" /> Hobby
+    </label>
+    <label>
+      <input name="answer" value="work" type="radio" /> Work
+    </label>
+    <label>
+      <input name="answer" value="both" type="radio" /> Both
+    </label>
+
+    <!-- Checkboxes -->
+    <p>What would you like to improve?</p>
+    <label>
+      <input type="checkbox" name="improvement" value="Front-end Projects" />
+      Front-end Projects
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Back-end Projects" />
+      Back-end Projects
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Data Visualization" />
+      Data Visualization
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Challenges" />
+      Challenges
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Open Source Community" />
+      Open Source Community
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Gitter help rooms" />
+      Gitter help rooms
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Videos" />
+      Videos
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="City Meetups" />
+      City Meetups
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Wiki" />
+      Wiki
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Forum" />
+      Forum
+    </label>
+    <label>
+      <input type="checkbox" name="improvement" value="Additional Courses" />
+      Additional Courses
+    </label>
+
+    <!-- Textarea -->
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+
+    <!-- Submit button -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
   
-<input type="checkbox" name"improvement" value="Gitter help rooms"   />
-Gitter help rooms
-</label>
-
-<label>
-<input type="checkbox" name"improvement" value="Videos"   />
-Videos
-</label>
-<label>
-  
-<input type="checkbox" name"improvement" value="City Meetups"   />
-City Meetups
-</label>
-<label>
-  
-<input type="checkbox" name"improvement" value="Wiki"   />
-Wiki
-</label>
-<label>
- 
-<input type="checkbox" name"improvement" value="Forum"   />
- Forum
-</label>
-<label>
-  
-<input type="checkbox" name"improvement" value="Additional Courses"   />
-Additional Courses
-</label>
-<label>
-  Any comments or suggestions ?
-  </label>
-<textarea> Enter your comment here... </textarea>
-<button id="submit"> Submit </button>
- </select> 
-</form>
 </body>
 </html>

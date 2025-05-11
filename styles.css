@@ -3,21 +3,26 @@ body{
     height: 100vh;
     margin: 0;
     font-size: 16px;
-    background-color: blue;
-    color: white;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   #title, #description{
     text-align: center;
-    margin: 1em auto;
+     margin: 2em auto 1em auto;
   }
   
   form{
-    width: 60 vw;
-    max-width: 500px;
-    min-width: 300px;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
-    padding-bottom: 2em;
+    border-radius: 10px;
+    padding: 2em;
+     background-color: rgba(255, 255, 255, 0.1);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
   input,
@@ -25,17 +30,20 @@ body{
     margin: 10px 0;
     width: 100%;
     min-height: 2em;
+    resize: vertical;
   }
   
   label{
     display: block;
-    
+    margin-top: 1.5em;
+    font-weight: bold;
+    color: #fff;
   }
   
   input[type="radio"]{
-  width: unset;
-  vertical-align: middle;
-  margin: 0 0.5em 0 0;
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
   }
   input[type="checkbox"]{
     width: unset;
@@ -43,7 +51,27 @@ body{
     margin: 0 0.5em 0 0;
   }
   button{
-    margin: 1em auto;
+    margin: 2em auto 0 auto;
     width: 60%;
     display: block;
+    background-color: white;
+    color: blue;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 1.5em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
